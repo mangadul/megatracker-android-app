@@ -50,8 +50,8 @@ dependencies {
 
 
 task requestPasswords << {
-    android.signingConfigs.release.storePassword = 'Mt020215as2009' //new String(System.console().readPassword('\nStore password: '))
-    android.signingConfigs.release.keyPassword = 'Mt020215as2009' //new String(System.console().readPassword('Key password: '))
+    android.signingConfigs.release.storePassword = new String(System.console().readPassword('\nStore password: '))
+    android.signingConfigs.release.keyPassword = new String(System.console().readPassword('Key password: '))
 }
 
 
